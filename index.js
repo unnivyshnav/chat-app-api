@@ -24,4 +24,4 @@ app.use("/auth", userRouter);
 app.use("/api/conversations", conversationRoute);
 app.use("/api/messages", messageRoute);
 
-app.listen(5000, () => console.log("Server started"));
+app.listen(process.env.PORT || 5000, () => console.log("server started"));
